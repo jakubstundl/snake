@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JS Snake</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sheet.css') }}">
+<!--<link rel="stylesheet" href="sheet.css">-->
+    
+    </head>
+    <body>
+    
+       {%block content_of_index %}{%endblock%}
+     <!--  {%block content_of_snake_table%}{%endblock%}
+       {%block content_of_submit_hs%}{%endblock%}
+--> 
+
+
+
+       <div>
+        <table class="stats-table">
+        <th class="table-header">High Score</th>
+        <tr><td class="rank">1.</td> <td  class="username">{{name1}} </td><td  class="score">{{score1}} </td></tr>
+        <tr><td class="rank">2.</td> <td  class="username">{{name2}} </td><td  class="score">{{score2}} </td></tr>
+        <tr><td class="rank">3.</td> <td  class="username">{{name3}} </td><td  class="score">{{score3}} </td></tr>
+        <tr><td class="rank">4.</td> <td  class="username">{{name4}} </td><td  class="score">{{score4}} </td></tr>
+        <tr><td class="rank">5.</td> <td  class="username">{{name5}} </td><td  class="score">{{score5}} </td></tr>
+        <tr><td class="rank">6.</td> <td  class="username">{{name6}} </td><td  class="score">{{score6}} </td</tr>
+        <tr><td class="rank">7.</td> <td  class="username">{{name7}} </td><td  class="score">{{score7}} </td></tr>
+        <tr><td class="rank">8.</td> <td  class="username">{{name8}} </td><td  class="score">{{score8}} </td></tr>
+        <tr><td class="rank">9.</td> <td  class="username">{{name9}} </td><td  class="score">{{score9}} </td></tr>
+        <tr><td class="rank">10.</td><td  class="username">{{name10}}</td><td  class="score">{{score10}}</td></tr>
+   
+      </div>
+    <!--
+        <script src="tabulka.class.js"></script>
+        <script src="snakeRunner.js"></script>
+        <script src="js.js"></script>  
+        <script src="components.js"></script>             
+-->           
+        <script src="{{ url_for('static', filename='js/tabulka.class.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/snakeRunner.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/js.js') }}"></script> 
+        <script src="{{ url_for('static', filename='js/components.js') }}"></script> 
+               
+    </body>
+</html>
+
+

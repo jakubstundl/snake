@@ -1,0 +1,38 @@
+
+{% extends "base.html" %}
+
+{% block content_of_submit_hs %}
+<div id = 'sbmt'>
+<p>Your score is </p>
+<label for="name">Name:</label>
+  <input name="name" type="text" id='input'>
+
+  <button onclick="sendToDb()">Click me</button>
+
+</div>
+<script>
+
+function sendToDb() {
+var name = document.getElementById('input').value;
+
+
+  var xhttp = new XMLHttpRequest();
+  var JSON_sent = {"name":name};
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      
+    }
+  };
+  xhttp.open("POST", "/submit_highscore", true);
+//xhttp.send(JSON.stringify(JSON_sent));
+//xhttp.send(JSON_sent);
+xhttp.send(JSON.stringify(JSON_sent));
+  console.log(JSON.stringify(JSON_sent))
+  console.log(JSON_sent)
+}
+</script>
+
+
+<div><span id="ajax">Hello</span></div>
+
+{% endblock %}

@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14.5.2020, 16:06:15
+    Author     : Jakub
+*/
+
+table, th,td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: black;
+}
+table{
+  border: 5px solid white;
+}
+td{
+     width:20px;
+  height: 20px;
+  margin:0px;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+body{
+display: flex;
+flex-direction: column;
+margin: auto;
+width: 80%;
+background-color: black;
+
+}
+.header{
+  filter: invert();
+}
+.inner_body {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.components{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:auto;
+  align-items: center;
+}
+.score-game{
+  font-family: 'Press Start 2P', cursive;
+  filter: invert();
+  font-size: 30px;
+}
+.table-div{
+  flex-basis: 50%;
+}
+.starter{
+  width: 90%;
+  height: 80%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 80px;
+  filter: invert();
+}
+.starter:hover{
+  filter: initial;
+}
+.stats-table{
+  background-color: white;
+  font-family: 'Press Start 2P', cursive;
+  filter: invert();
+}
+.table-header{
+  background-color: white;
+  color: white;
+  filter: invert();
+  font-size: 30px;
+  text-align: center;
+  
+}
+.username{
+  background-color: white;
+}
+.score{
+  background-color: white;
+}
+.rank{
+  background-color: white;
+
+}
+input{
+  font-family: 'Press Start 2P', cursive;
+  width: 90%;
+  height: 80%;
+  font-size: 80px;
+  text-align: center;
+
+}
